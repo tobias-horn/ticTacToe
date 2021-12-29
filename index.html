@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <title>Tic Tac Toe</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="info-wrapper">
+            <button id="ai">Play against AI</button>
+            <button id="gameReset">Reset game</button>
+            <div class="stats" id="stats"></div>
+        </div>
+        
+        <div class="info-wrapper" id="gameInputWrapper">
+            <div class="gameinput-wrapper" id="gameInput">
+                <form class="wrapper-player1" id="playerInfo1">
+                    <label for="player1Name">Player 1</label><br>
+                    <input class="text-input" type="text" id="player1Name" name="name" placeholder="optional"><br><br>
+                    <input type="radio" id="player1X" name="markPlayer1" value="X" checked>
+                    <label for="player1X">X</label><br>
+                    <input type="radio" id="player1O" name="markPlayer1" value="O">
+                    <label for="player1O">O</label><br><br>
+                </form>
+                <form class="wrapper-player2" id="playerInfo2">
+                    <label for="player2Name">Player 2</label><br>
+                    <input class="text-input" type="text" id="player2Name" name="name" placeholder="optional"><br><br>
+                    <input type="radio" id="player2X" name="markPlayer2" value="X">
+                    <label for="player2X">X</label><br>
+                    <input type="radio" id="player2O" name="markPlayer2" value="O" checked>
+                    <label for="playe21O">O</label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="field" data-square="0"></div>
+        <div class="field" data-square="1"></div>
+        <div class="field" data-square="2"></div>
+        <div class="field" data-square="3"></div>
+        <div class="field" data-square="4"></div>
+        <div class="field" data-square="5"></div>
+        <div class="field" data-square="6"></div>
+        <div class="field" data-square="7"></div>
+        <div class="field" data-square="8"></div>
+    </div>
+</body>
+</html>

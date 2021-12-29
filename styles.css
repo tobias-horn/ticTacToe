@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #12c2e9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    max-width: 1000px;
+    align-items: center;
+}
+
+
+/* styling AI and reset button  */
+#ai {
+    padding: 10px 20px;
+    background-color: #7F7FD5;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#ai:hover {
+    background-color: #6c6cb7;
+}
+
+#gameReset {
+    margin-left: 10px;
+    background-color: #f64f59;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+
+}
+
+#gameReset:hover {
+    background-color: #cd434d;
+}
+
+
+/* styling wrapper box left side*/
+
+.info-wrapper {
+    background-color: rgba(255, 255, 255, 0.729);
+    border-radius: 10px;
+    margin-right: 50px;
+    padding: 50px 50px 50px 50px;
+    margin-top: 20px;
+
+    
+}
+
+.stats {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.gameinput-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-player1 {
+    margin-right: 40px;
+}
+
+input {
+    margin-top: 10px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+}
+
+.field {
+    background-color: #7F7FD5;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #6565ac72;
+    display: flex;
+    align-items: center;
+}
+
+.field p {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    width: 100%;
+    color: #1b1b37;
+}
